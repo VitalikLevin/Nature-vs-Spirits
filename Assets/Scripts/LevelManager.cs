@@ -6,9 +6,13 @@ public class LevelManager : MonoBehaviour
 {
 	[SerializeField]
 	private GameObject tile;
+	[SerializeField]
+	private Transform parent;
+
 	void Start ()
 	{
 		CreateLevel ();
+		IdealPosition ();
 	}
 	private void CreateLevel ()
 	{
@@ -18,8 +22,13 @@ public class LevelManager : MonoBehaviour
 			for (int x = 0; x < 9; x++)
 			{
 				GameObject newTile = Instantiate (tile);
+				newTile.transform.SetParent (parent);
 				newTile.transform.position = new Vector3 (tileSize * x, tileSize * y, 0);
 			}
 		}
+	}
+	private void IdealPosition ()
+	{
+		parent.position = new Vector3 (-5.9f, -2.16f, 0);
 	}
 }
