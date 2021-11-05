@@ -11,6 +11,6 @@ DirertX Version: 10 or better
 
 RAM: 2 GB
 
-If you want to edit this program you must have Unity 2017.1.1
+If you want to edit this program, you must have Unity 2017.1.1
 
 
