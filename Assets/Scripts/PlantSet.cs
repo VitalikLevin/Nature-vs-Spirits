@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class PlantSet : MonoBehaviour 
 {
-	[SerializeField]
-	private GameObject plant;
+	public GameObject plant;
 	[SerializeField]
 	private Transform grass;
 	private void SetPlant ()

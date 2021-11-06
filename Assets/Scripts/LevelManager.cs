@@ -29,6 +29,6 @@ public class LevelManager : MonoBehaviour
 	}
 	private void IdealPosition ()
 	{
-		parent.position = new Vector3 (-4.84f, -2.82f, 0);
+		parent.position = new Vector3 (-4.84f, -3.31f, 0);
 	}
 }
