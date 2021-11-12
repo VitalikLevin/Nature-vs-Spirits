@@ -11,11 +11,10 @@ public class OtherSettings : MonoBehaviour
 	{
 		Application.OpenURL ("https://vk.com/");
 	}
-	public GameObject quitPanel;
-	public Transform canvas;
+	[SerializeField]
+	private GameObject quitPanel;
 	public void FakeChoice ()
 	{
-		GameObject newPanel = Instantiate (quitPanel);
-		newPanel.transform.SetParent (canvas);
+		quitPanel.SetActive (true);
 	}
 }
