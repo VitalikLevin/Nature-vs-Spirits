@@ -8,6 +8,10 @@ public class LevelManager : MonoBehaviour
 	private GameObject tile;
 	[SerializeField]
 	private Transform parent;
+	//Size of a lawn
+	public int customX;
+	public int customY;
+	public Vector3 customPos;
 
 	void Start ()
 	{
@@ -17,9 +21,9 @@ public class LevelManager : MonoBehaviour
 	private void CreateLevel ()
 	{
 		float tileSize = tile.GetComponent<SpriteRenderer> ().sprite.bounds.size.x;
-		for (int y = 0; y < 5; y++)
+		for (int y = 0; y < customY; y++)
 		{
-			for (int x = 0; x < 9; x++)
+			for (int x = 0; x < customX; x++)
 			{
 				GameObject newTile = Instantiate (tile);
 				newTile.transform.SetParent (parent);
@@ -29,6 +33,6 @@ public class LevelManager : MonoBehaviour
 	}
 	private void IdealPosition ()
 	{
-		parent.position = new Vector3 (-4.84f, -3.31f, 0);
+		parent.position = new Vector3 (customPos.x, customPos.y, 0);
 	}
 }
