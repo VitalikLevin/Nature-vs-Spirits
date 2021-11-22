@@ -1,16 +1,33 @@
-# Nature vs. Evil Sprits
-This is a tower defence for Windows.
+# Nature vs. Evil Spirits
 
-The system requirements of the program are written below:
+<h4>About the program</h4>
 
-System: Windows 7 (64-bit) or better
+This is a two-dimensional tower defense.
 
-CPU: Intel Celeron T3000 or better
+<h4>Installation:</h4>
 
-DirertX Version: 10 or better
+1.Download [Unity Engine](https://unity3d.com/get-unity/download/archive ).
 
-RAM: 2 GB
+2.Instal Unity Engine.
 
-If you want to edit this program, you must have Unity 2017.1.1
+3.Clone this [repository](https://github.com/VitalikLevin/Nature-vs.-Evil-Sprits.git).
+
+4.Build it
+
+</details>
+<details><summary>System Requirements:</summary>
+
+Operating System: Windows 7 (64-bit)
+
+CPU: Intel Celeron T3000
+
+RAM: 2 GB (2048 MB)
+
+DirertX Version: 10
+</details>
+
+:information_source: If you wanna edit the game, you must have Unity 2017.1.1f1
+
+
 
 
