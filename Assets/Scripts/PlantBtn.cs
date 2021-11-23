@@ -2,13 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlantBtn : MonoBehaviour 
+public class PlantBtn : Singleton<PlantBtn> 
 {
-	public GameObject clickedPlant;
-	private GameObject grass;
-	//The custom plant
-	public void clickedBtn () 
+	[SerializeField]
+	private GameObject pickedPlant;
+	public GameObject PickedPlant
 	{
-		grass.GetComponent<PlantSet>().plant = clickedPlant;
+		get
+		{
+			return pickedPlant;
+		}
+	}
+	public void PickPlant ()
+	{
+		PlantSet.Instance.PlantPrefab = PickedPlant;
 	}
 }

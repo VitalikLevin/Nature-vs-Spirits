@@ -8,9 +8,10 @@ public class LevelManager : MonoBehaviour
 	private GameObject tile;
 	[SerializeField]
 	private Transform parent;
-	//Size of a lawn
-	public int customX;
-	public int customY;
+	[SerializeField]
+	private int customX;
+	[SerializeField]
+	private int customY;
 	public Vector3 customPos;
 
 	void Start ()

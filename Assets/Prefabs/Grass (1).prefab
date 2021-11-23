@@ -78,8 +78,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed0a6f223daec7a4c963c4d5502cf09b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  plant: {fileID: 1013196818871206, guid: dd447624e25dfaf44a2db171ae8e593f, type: 2}
-  grass: {fileID: 0}
+  plant: {fileID: 0}
 --- !u!212 &212139830054594616
 SpriteRenderer:
   m_ObjectHideFlags: 1

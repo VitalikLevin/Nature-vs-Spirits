@@ -363,7 +363,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 538568477}
-        m_MethodName: clickedBtn
+        m_MethodName: PickPlant
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -419,7 +419,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af7c30c640a39d54d9332e9f50014b87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clickedPlant: {fileID: 1378041755508024, guid: e4d891a3c6d96f34dafbfd1841e4bec8,
+  pickedPlant: {fileID: 1378041755508024, guid: e4d891a3c6d96f34dafbfd1841e4bec8,
     type: 2}
 --- !u!1 &1026534936
 GameObject:
@@ -470,7 +470,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af7c30c640a39d54d9332e9f50014b87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clickedPlant: {fileID: 1013196818871206, guid: dd447624e25dfaf44a2db171ae8e593f,
+  pickedPlant: {fileID: 1013196818871206, guid: dd447624e25dfaf44a2db171ae8e593f,
     type: 2}
 --- !u!114 &1026534939
 MonoBehaviour:
@@ -512,7 +512,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1026534938}
-        m_MethodName: clickedBtn
+        m_MethodName: PickPlant
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -747,8 +747,8 @@ MonoBehaviour:
   tile: {fileID: 1179775471873742, guid: 758b3cc04e4f24941bae4c2e632920fa, type: 2}
   parent: {fileID: 1191645200}
   customX: 9
-  customY: 5
-  customPos: {x: -4.84, y: -3.31, z: 0}
+  customY: 1
+  customPos: {x: -4.84, y: -0.64, z: 0}
 --- !u!4 &1570247715
 Transform:
   m_ObjectHideFlags: 0

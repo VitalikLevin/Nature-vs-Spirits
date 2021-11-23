@@ -2,24 +2,34 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlantSet : MonoBehaviour 
+public class PlantSet : Singleton<PlantSet>
 {
-	public GameObject plant;
-	[SerializeField]
-	private Transform grass;
-	private void SetPlant ()
+	private GameObject plantPrefab;
+	public GameObject PlantPrefab
 	{
-		GameObject NewPlant = Instantiate (plant);
+		get
+		{
+			return plantPrefab;
+		}
+		set
+		{
+			this.plantPrefab = value;
+		}
+	}
+	private Transform grass;
+	private void PlacePlant ()
+	{
+		GameObject NewPlant = Instantiate (PlantPrefab);
 		NewPlant.transform.position = new Vector3 (grass.position.x, grass.position.y, 0);
 		NewPlant.transform.SetParent (grass);
 	}
 	private void BuyPlant ()
 	{
-		plant = null;
+		plantPrefab = null;
 	}
-	void OnMouseUp () 
+	void OnMouseDown () 
 	{
-		SetPlant ();
+		PlacePlant ();
 		BuyPlant ();
 	}
 	void Start ()
