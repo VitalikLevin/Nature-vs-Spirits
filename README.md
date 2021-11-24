@@ -1,5 +1,17 @@
 # Nature vs. Evil Spirits
 
+<h4>Note:</h4>
+
+- I don't create videos about this product on TikTok.
+- The official Vk Page is [@s_topgames](https://vk.com/s_topgames).
+
+</details>
+<details><summary>Navigation</summary>
+
+- [About the program](#about-the-program)
+- [Installation](#installation)
+</details>
+
 <h4>About the program</h4>
 
 This is a two-dimensional tower defense.
