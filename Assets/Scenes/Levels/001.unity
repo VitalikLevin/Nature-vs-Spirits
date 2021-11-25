@@ -296,7 +296,6 @@ GameObject:
   - component: {fileID: 538568476}
   - component: {fileID: 538568475}
   - component: {fileID: 538568474}
-  - component: {fileID: 538568477}
   m_Layer: 5
   m_Name: daffodilButton
   m_TagString: Untagged
@@ -361,18 +360,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 538568475}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 538568477}
-        m_MethodName: PickPlant
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &538568475
@@ -408,19 +396,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 538568472}
---- !u!114 &538568477
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 538568472}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af7c30c640a39d54d9332e9f50014b87, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pickedPlant: {fileID: 1378041755508024, guid: e4d891a3c6d96f34dafbfd1841e4bec8,
-    type: 2}
 --- !u!1 &1026534936
 GameObject:
   m_ObjectHideFlags: 0
@@ -432,7 +407,6 @@ GameObject:
   - component: {fileID: 1026534941}
   - component: {fileID: 1026534940}
   - component: {fileID: 1026534939}
-  - component: {fileID: 1026534938}
   m_Layer: 5
   m_Name: tulipButton
   m_TagString: Untagged
@@ -459,19 +433,6 @@ RectTransform:
   m_AnchoredPosition: {x: -236, y: 1.8997025}
   m_SizeDelta: {x: 512, y: 384}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1026534938
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1026534936}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af7c30c640a39d54d9332e9f50014b87, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pickedPlant: {fileID: 1013196818871206, guid: dd447624e25dfaf44a2db171ae8e593f,
-    type: 2}
 --- !u!114 &1026534939
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -510,18 +471,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1026534940}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1026534938}
-        m_MethodName: PickPlant
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1026534940
@@ -748,6 +698,7 @@ MonoBehaviour:
   parent: {fileID: 1191645200}
   customX: 9
   customY: 1
+  isAir: 0
   customPos: {x: -4.84, y: -0.64, z: 0}
 --- !u!4 &1570247715
 Transform:

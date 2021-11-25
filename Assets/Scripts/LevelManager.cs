@@ -12,6 +12,8 @@ public class LevelManager : MonoBehaviour
 	private int customX;
 	[SerializeField]
 	private int customY;
+	[SerializeField]
+	private bool isAir;
 	public Vector3 customPos;
 
 	void Start ()
@@ -29,6 +31,10 @@ public class LevelManager : MonoBehaviour
 				GameObject newTile = Instantiate (tile);
 				newTile.transform.SetParent (parent);
 				newTile.transform.position = new Vector3 (tileSize * x, tileSize * y, 0);
+				if (isAir == true)
+				{
+					newTile.GetComponent<SpriteRenderer>().color = new Color (0f, 1f, 0f, 0.0f);
+				}
 			}
 		}
 	}
