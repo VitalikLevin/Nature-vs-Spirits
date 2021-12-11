@@ -14,12 +14,18 @@ public class LevelManager : MonoBehaviour
 	private int customY;
 	[SerializeField]
 	private bool isAir;
-	public Vector3 customPos;
+	[SerializeField]
+	private Vector3 customPos;
+	[SerializeField]
+	private bool effectsOn;
+	[SerializeField]
+	private GameObject effects;
 
 	void Start ()
 	{
 		CreateLevel ();
 		IdealPosition ();
+		CreateEffects ();
 	}
 	private void CreateLevel ()
 	{
@@ -41,5 +47,14 @@ public class LevelManager : MonoBehaviour
 	private void IdealPosition ()
 	{
 		parent.position = new Vector3 (customPos.x, customPos.y, 0);
+	}
+	private void CreateEffects ()
+	{
+		if (effectsOn == true)
+		{
+			GameObject newEffect = Instantiate (effects);
+			newEffect.transform.position = new Vector3 (10.3f, 7.2f, 1.5f);
+			newEffect.transform.Rotate(180, 180, -169);
+		}
 	}
 }
