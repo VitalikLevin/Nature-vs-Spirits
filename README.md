@@ -10,6 +10,7 @@
 
 - [About the program](#about-the-program)
 - [Installation](#installation)
+- [Troubleshooting](#troubleshooting)
 </details>
 
 <h4>About the program</h4>
@@ -38,6 +39,8 @@ This is a two-dimensional tower defense.
 - DirertX Version: 10
 </details>
 
+<h4>Troubleshooting:</h4>
+
 :information_source: If you wanna edit the game, you must have Unity 2017.1.1f1
 
-:information_source: If you can't run the game, you can switch _Project Settings> Player> GraphicAPIs_ to Direct3D 9 or OpenGL Core for mor performance.
+:information_source: If you can't run the game, you can switch _Project Settings> Player> GraphicAPIs_ to Direct3D 9 or OpenGL Core for more performance.
