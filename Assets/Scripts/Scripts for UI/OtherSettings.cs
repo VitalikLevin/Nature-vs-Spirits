@@ -18,6 +18,6 @@ public class OtherSettings : MonoBehaviour
 	}
 	public void BestPage ()
 	{
-		Application.OpenURL ("https://github.com/VitalikLevin/Nature-vs.-Evil-Sprits/wiki");
+		Application.OpenURL ("https://clck.ru/9TFat");
 	}
 }

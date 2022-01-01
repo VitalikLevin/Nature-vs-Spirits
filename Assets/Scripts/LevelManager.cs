@@ -1,60 +1,46 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class LevelManager : MonoBehaviour 
 {
 	[SerializeField]
-	private GameObject tile;
-	[SerializeField]
-	private Transform parent;
-	[SerializeField]
-	private int customX;
-	[SerializeField]
-	private int customY;
-	[SerializeField]
-	private bool isAir;
+	private GameObject[] grounds;
 	[SerializeField]
 	private Vector3 customPos;
-	[SerializeField]
-	private bool effectsOn;
-	[SerializeField]
-	private GameObject effects;
-
+	public float GroundSize
+	{
+		get { return grounds[0].GetComponent<SpriteRenderer>().sprite.bounds.size.x; }
+	}
 	void Start ()
 	{
 		CreateLevel ();
-		IdealPosition ();
-		CreateEffects ();
 	}
 	private void CreateLevel ()
 	{
-		float tileSize = tile.GetComponent<SpriteRenderer> ().sprite.bounds.size.x;
-		for (int y = 0; y < customY; y++)
+		string[] mapData = ReadLevel();
+		int mapX = mapData[0].ToCharArray().Length;
+		int mapY = mapData.Length;
+		for (int y = 0; y < mapY; y++)
 		{
-			for (int x = 0; x < customX; x++)
+			char[] newGrounds = mapData[y].ToCharArray();
+			for (int x = 0; x < mapX; x++)
 			{
-				GameObject newTile = Instantiate (tile);
-				newTile.transform.SetParent (parent);
-				newTile.transform.position = new Vector3 (tileSize * x, tileSize * y, 0);
-				if (isAir == true)
-				{
-					newTile.GetComponent<SpriteRenderer>().color = new Color (0f, 1f, 0f, 0.0f);
-				}
+				PlaceGround (newGrounds[x].ToString(), x, y, customPos);
 			}
 		}
 	}
-	private void IdealPosition ()
+	private void PlaceGround (string groundType, int x, int y, Vector3 worldStart)
 	{
-		parent.position = new Vector3 (customPos.x, customPos.y, 0);
+		int groundIndex = int.Parse(groundType);
+		GameObject newGround = Instantiate(grounds[groundIndex]);
+		newGround.transform.position = new Vector3 (customPos.x + (GroundSize * x), customPos.y + (GroundSize * y), 0);
 	}
-	private void CreateEffects ()
+	private string[] ReadLevel ()
 	{
-		if (effectsOn == true)
-		{
-			GameObject newEffect = Instantiate (effects);
-			newEffect.transform.position = new Vector3 (10.3f, 7.2f, 1.5f);
-			newEffect.transform.Rotate(180, 180, -169);
-		}
+		TextAsset bindData = Resources.Load("lawn_1") as TextAsset;
+		string tmpData = bindData.text.Replace(Environment.NewLine, string.Empty);
+		return tmpData.Split('-');
 	}
 }

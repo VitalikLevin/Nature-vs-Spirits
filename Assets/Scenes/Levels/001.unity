@@ -209,6 +209,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11f8b83b643a2224497750dd6d582117, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bonus: 0
   currencyText: {fileID: 1382907607}
 --- !u!4 &614769797
 Transform:
@@ -217,7 +218,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 614769795}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 15, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -698,7 +699,7 @@ Prefab:
     - target: {fileID: 224337604923121188, guid: 8b88f6beb1549c945a994f36de6266f9,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 51.2
+      value: 51.199997
       objectReference: {fileID: 0}
     - target: {fileID: 224337604923121188, guid: 8b88f6beb1549c945a994f36de6266f9,
         type: 2}
@@ -867,6 +868,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1570247715}
   - component: {fileID: 1570247714}
+  - component: {fileID: 1570247716}
   m_Layer: 0
   m_Name: LevelManager
   m_TagString: Untagged
@@ -885,14 +887,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b474af2270ce85541a0944431ad4802e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tile: {fileID: 1179775471873742, guid: 758b3cc04e4f24941bae4c2e632920fa, type: 2}
-  parent: {fileID: 1191645200}
-  customX: 9
-  customY: 1
-  isAir: 0
-  customPos: {x: -4.84, y: -0.64, z: 0}
-  effectsOn: 0
-  effects: {fileID: 1267655871669166, guid: 0cc5d568486347340b98455392b2010b, type: 2}
+  grounds:
+  - {fileID: 1179775471873742, guid: 758b3cc04e4f24941bae4c2e632920fa, type: 2}
+  - {fileID: 1856313522508228, guid: 22f2f9c3a1a157647b82803750f1a9bf, type: 2}
+  - {fileID: 1467394031313076, guid: 2d80d7070b2536541acefbe83b5256d8, type: 2}
+  customPos: {x: -4.84, y: -3.31, z: 0}
 --- !u!4 &1570247715
 Transform:
   m_ObjectHideFlags: 0
@@ -906,6 +905,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1570247716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1570247713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7f2d3dadde670a4b947660310bc32e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  effectsOn: 0
+  effects: {fileID: 1267655871669166, guid: 0cc5d568486347340b98455392b2010b, type: 2}
 --- !u!224 &1812587283 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 224364342890286314, guid: eb38d809de8ebdd46b41d852d997915a,

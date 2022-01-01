@@ -1,9 +1,13 @@
 {
+    //VS Code settings
+    "editor.minimap.enabled": false,
+    "csharp.suppressDotnetInstallWarning": true,
+    "telemetry.telemetryLevel": "off",
     "files.exclude":
     {
-        "**/.DS_Store":true,
-        "**/.git":true,
+        "**/.git":false,
         "**/.gitignore":true,
+        "**/.DS_Store":true,
         "**/.gitmodules":true,
         "**/*.booproj":true,
         "**/*.pidb":true,
@@ -43,14 +47,14 @@
         "**/*.meta":true,
         "**/*.prefab":true,
         "**/*.unity":true,
-        "build/":false,
-        "Build/":false,
+        "build/":true,
+        "Build/":true,
         "Library/":true,
         "library/":true,
         "obj/":true,
         "Obj/":true,
         "ProjectSettings/":true,
-        "temp/":false,
-        "Temp/":false
+        "temp/":true,
+        "Temp/":true
     }
 }

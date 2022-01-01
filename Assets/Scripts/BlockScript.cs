@@ -27,17 +27,17 @@ public class BlockScript : MonoBehaviour
 	{
 		if (!EventSystem.current.IsPointerOverGameObject() && GameManager.Instance.ClickedBtn != null)
 		{
-			if (IsEmpty = true)
+			if (IsEmpty == true)
 			{
 				ColorBlock(emptyColor);
+				if (Input.GetMouseButtonDown(0))
+				{
+					PlacePlant();
+				}
 			}
-			if (IsEmpty = false)
+			if (IsEmpty == false)
 			{
 				ColorBlock(fullColor);
-			}
-			else if (Input.GetMouseButtonDown(0))
-			{
-				PlacePlant();
 			}
 		}
 	}
