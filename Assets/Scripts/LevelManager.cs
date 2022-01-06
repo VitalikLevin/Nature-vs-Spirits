@@ -6,6 +6,8 @@ using UnityEngine;
 public class LevelManager : MonoBehaviour 
 {
 	[SerializeField]
+	private string levelMap;
+	[SerializeField]
 	private GameObject[] grounds;
 	[SerializeField]
 	private Vector3 customPos;
@@ -39,7 +41,7 @@ public class LevelManager : MonoBehaviour
 	}
 	private string[] ReadLevel ()
 	{
-		TextAsset bindData = Resources.Load("lawn_1") as TextAsset;
+		TextAsset bindData = Resources.Load(levelMap) as TextAsset;
 		string tmpData = bindData.text.Replace(Environment.NewLine, string.Empty);
 		return tmpData.Split('-');
 	}

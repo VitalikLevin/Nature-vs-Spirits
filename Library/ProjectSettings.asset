@@ -14,13 +14,13 @@ PlayerSettings:
   productName: Nature vs. Spirits
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
-  m_SplashScreenBackgroundColor: {r: 0, g: 0.472, b: 0, a: 1}
+  m_SplashScreenBackgroundColor: {r: 0, g: 0, b: 1, a: 1}
   m_ShowUnitySplashScreen: 1
   m_ShowUnitySplashLogo: 1
   m_SplashScreenOverlayOpacity: 0.5
-  m_SplashScreenAnimation: 0
+  m_SplashScreenAnimation: 1
   m_SplashScreenLogoStyle: 1
-  m_SplashScreenDrawMode: 0
+  m_SplashScreenDrawMode: 1
   m_SplashScreenBackgroundAnimationZoom: 1
   m_SplashScreenLogoAnimationZoom: 1
   m_SplashScreenBackgroundLandscapeAspect: 1
@@ -38,6 +38,8 @@ PlayerSettings:
     width: 1
     height: 1
   m_SplashScreenLogos:
+  - logo: {fileID: 10404, guid: 0000000000000000e000000000000000, type: 0}
+    duration: 2
   - logo: {fileID: 21300000, guid: 03a9a219c0cebe841a628889e83c8ad9, type: 3}
     duration: 2
   m_SplashScreenBackgroundLandscape: {fileID: 0}
@@ -88,7 +90,7 @@ PlayerSettings:
   xboxEnableKinectAutoTracking: 0
   xboxEnableFitness: 0
   visibleInBackground: 0
-  allowFullscreenSwitch: 0
+  allowFullscreenSwitch: 1
   graphicsJobMode: 0
   macFullscreenMode: 2
   d3d9FullscreenMode: 1
@@ -122,7 +124,7 @@ PlayerSettings:
     5:4: 0
     16:10: 1
     16:9: 1
-    Others: 1
+    Others: 0
   bundleVersion: 0.1.0
   preloadedAssets: []
   metroInputSource: 0
@@ -146,7 +148,7 @@ PlayerSettings:
     Android: com.StopGames.NvsS
     Standalone: com.StopGames.NvsS
   buildNumber:
-    Standalone: 1
+    Standalone: 2
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 16
   AndroidTargetSdkVersion: 0
