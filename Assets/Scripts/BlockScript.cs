@@ -10,6 +10,7 @@ public class BlockScript : MonoBehaviour
 	private Color32 fullColor = new Color32 (255, 118, 118, 255);
 	private Color32 emptyColor = new Color32 (96, 255, 90, 255);
 	public bool IsEmpty { get; private set; }
+	public Point GridPosition { get; private set; }
 	private void PlacePlant () 
 	{
 		GameObject newPlant = Instantiate(GameManager.Instance.ClickedBtn.PlantPrefab);
@@ -49,6 +50,14 @@ public class BlockScript : MonoBehaviour
 	{
 		block = GetComponent<Transform>();
 		blockRenderer = GetComponent<SpriteRenderer>();
-		IsEmpty = true;
+		if (block.name != "Dirt")
+		{
+			IsEmpty = true;
+		}
+	}
+	public void Setup (Point gridPos, Vector3 wPos)
+	{
+		this.GridPosition = gridPos;
+		transform.position = wPos;
 	}
 }

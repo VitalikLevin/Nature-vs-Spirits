@@ -41,7 +41,7 @@ public class GameManager : Singleton<GameManager>
 	}
 	private void HandleEscape ()
 	{
-		if (Input.GetKeyDown(KeyCode.Escape))
+		if (Input.GetKeyDown(KeyCode.Escape) || Input.GetMouseButton(1))
 		{
 			Hover.Instance.Deactivate();
 		}

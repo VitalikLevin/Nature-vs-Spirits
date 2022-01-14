@@ -6,7 +6,7 @@
     "files.exclude":
     {
         "**/.git":false,
-        "**/.gitignore":true,
+        "**/.gitignore":false,
         "**/.DS_Store":true,
         "**/.gitmodules":true,
         "**/*.booproj":true,

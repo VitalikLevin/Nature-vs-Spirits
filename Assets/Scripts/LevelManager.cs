@@ -1,10 +1,10 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class LevelManager : MonoBehaviour 
 {
+	[SerializeField]
+	private Transform map;
 	[SerializeField]
 	private string levelMap;
 	[SerializeField]
@@ -36,8 +36,8 @@ public class LevelManager : MonoBehaviour
 	private void PlaceGround (string groundType, int x, int y, Vector3 worldStart)
 	{
 		int groundIndex = int.Parse(groundType);
-		GameObject newGround = Instantiate(grounds[groundIndex]);
-		newGround.transform.position = new Vector3 (customPos.x + (GroundSize * x), customPos.y + (GroundSize * y), 0);
+		BlockScript newGround = Instantiate(grounds[groundIndex], map).GetComponent<BlockScript>();
+		newGround.Setup(new Point(x, y), new Vector3(worldStart.x + (GroundSize * x), worldStart.y + (GroundSize * y), 0));
 	}
 	private string[] ReadLevel ()
 	{
