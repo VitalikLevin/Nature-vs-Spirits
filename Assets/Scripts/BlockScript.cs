@@ -50,10 +50,7 @@ public class BlockScript : MonoBehaviour
 	{
 		block = GetComponent<Transform>();
 		blockRenderer = GetComponent<SpriteRenderer>();
-		if (block.name != "Dirt")
-		{
-			IsEmpty = true;
-		}
+		IsEmpty = true;
 	}
 	public void Setup (Point gridPos, Vector3 wPos)
 	{

@@ -148,7 +148,7 @@ PlayerSettings:
     Android: com.StopGames.NvsS
     Standalone: com.StopGames.NvsS
   buildNumber:
-    Standalone: 2
+    Standalone: 3
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 16
   AndroidTargetSdkVersion: 0

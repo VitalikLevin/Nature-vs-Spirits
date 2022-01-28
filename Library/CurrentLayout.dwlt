@@ -176,8 +176,8 @@ MonoBehaviour:
     y: 0
     width: 250
     height: 358
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -365,9 +365,9 @@ MonoBehaviour:
     height: 337
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 58f5ffff
-    m_LastClickedID: -2728
-    m_ExpandedIDs: e088ffff9889ffff808affffd68affff58f5ffff00000000
+    m_SelectedIDs: d0edfbff
+    m_LastClickedID: -266800
+    m_ExpandedIDs: d0edfbff24f8ffffcafbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -417,14 +417,14 @@ MonoBehaviour:
     width: 735
     height: 337
   m_SceneLighting: 1
-  lastFramingTime: 354.0402040084245
+  lastFramingTime: 302.9963991132945
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0, y: 0, z: 100}
+    m_Target: {x: 0, y: 0, z: 1}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 100}
+    m_Value: {x: 0, y: 0, z: 1}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -451,9 +451,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 11.571498
+    m_Target: 14.954832
     speed: 2
-    m_Value: 11.571498
+    m_Value: 14.954832
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -496,11 +496,13 @@ MonoBehaviour:
     - {fileID: 1107036818053398294, guid: 6641a51badb4178478a945d7bfdb79a1, type: 2}
     - {fileID: 1107883551082001226, guid: 88ea4de1f84a3054dbd9f681c878e31f, type: 2}
     - {fileID: 1107800794078523690, guid: ba89d25923973b542979b3a6f17873ea, type: 2}
+    - {fileID: 1107459194248564732, guid: 747283f1f70debb46be7b42997251338, type: 2}
     m_ValueSerializationHelper:
     - {x: 391.00003, y: 182.20001}
     - {x: 391.00003, y: 62.200012}
     - {x: 417.00003, y: 242.20001}
     - {x: 417.00003, y: 82.200005}
+    - {x: 391.00003, y: 182.20001}
   m_PreviewAnimator: {fileID: 0}
   m_AnimatorController: {fileID: 0}
   m_BreadCrumbs: []
@@ -552,19 +554,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets
+    - Assets/Sprites
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Sprites
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Public\Documents\Tower Defense
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: d82a0000
-    m_LastClickedID: 10968
-    m_ExpandedIDs: 00000000d82a0000242b000000ca9a3bffffff7f
+    m_SelectedIDs: 76260000
+    m_LastClickedID: 9846
+    m_ExpandedIDs: 0000000026260000dc26000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -592,7 +594,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000d82a0000242b0000
+    m_ExpandedIDs: 0000000026260000dc260000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -619,7 +621,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000000000000c260000
     m_RenameOverlay:
       m_UserAcceptedRename: 0

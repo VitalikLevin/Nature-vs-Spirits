@@ -892,7 +892,6 @@ MonoBehaviour:
   grounds:
   - {fileID: 1856313522508228, guid: 22f2f9c3a1a157647b82803750f1a9bf, type: 2}
   - {fileID: 1179775471873742, guid: 758b3cc04e4f24941bae4c2e632920fa, type: 2}
-  - {fileID: 1467394031313076, guid: 2d80d7070b2536541acefbe83b5256d8, type: 2}
   customPos: {x: -4.84, y: -3.31, z: 0}
 --- !u!4 &1570247715
 Transform:
