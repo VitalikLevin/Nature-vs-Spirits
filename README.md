@@ -34,7 +34,7 @@ This is a two-dimensional tower defense.
 
 :information_source: If you wanna edit the game, you must have Unity 2017.1.1f1
 
-:information_source: If you can't change screen mode, you can edit _screen mode_ in **regedit.exe**
+:information_source: If you can't change screen mode in-game, you can edit this value in **regedit.exe**
 
 >Screen mode = 0 is windowed mode
 >Screen mode = 1 is fullscreen mode
