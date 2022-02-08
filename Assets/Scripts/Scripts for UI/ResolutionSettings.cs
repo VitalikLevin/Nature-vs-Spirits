@@ -7,18 +7,12 @@ using UnityEngine.UI;
 public class ResolutionSettings : MonoBehaviour 
 {
 	public Dropdown dropdown;
-	public Toggle toggle;
 	Resolution[] res;
 	public void ScreenMode ()
 	{
-		toggle.isOn = Screen.fullScreen;
-		if (Screen.fullScreen == true) 
+		if (Input.GetKey(KeyCode.F))
 		{
-			PlayerPrefs.SetInt ("FullScreen", 1);
-		} 
-		else 
-		{
-			PlayerPrefs.SetInt ("FullScreen", 0);
+			Screen.fullScreen = !Screen.fullScreen;
 		}
 	}
 	public void SetRes ()
@@ -28,19 +22,6 @@ public class ResolutionSettings : MonoBehaviour
 	}
 	void Start () 
 	{
-		if (PlayerPrefs.HasKey ("FullScreen")) 
-		{
-			if (PlayerPrefs.GetInt ("FullScreen") == 0) 
-			{
-				Screen.fullScreen = false;
-				toggle.isOn = false;
-			} 
-		} 
-		else 
-		{
-			Screen.fullScreen = true;
-			toggle.isOn = true;
-		}
 		Resolution [] resolution  = Screen.resolutions;
 		res = resolution.Distinct ().ToArray ();
 		string[] strRes = new string[res.Length];
@@ -63,5 +44,9 @@ public class ResolutionSettings : MonoBehaviour
 			//Set default resolution
 			Screen.SetResolution (res [res.Length - 1].width, res [res.Length - 1].height, Screen.fullScreen);
 		}
+	}
+	void Update ()
+	{
+		ScreenMode ();
 	}
 }

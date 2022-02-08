@@ -3,13 +3,13 @@
 <details>
 <summary>Navigation</summary>
 
-- [About the program](#about-the-program)
+- [About the game](#about-the-game)
 - [Installation](#installation)
 - [Troubleshooting](#troubleshooting)
 - [License](#license)
 </details>
 
-<h4>About the program</h4>
+<h4>About the game</h4>
 
 This is a two-dimensional tower defense.
 
@@ -34,11 +34,11 @@ This is a two-dimensional tower defense.
 
 :information_source: If you wanna edit the game, you must have Unity 2017.1.1f1
 
-:information_source: If you can't change screen mode in-game, you can edit this value in **regedit.exe**
+:information_source: If you can't change screen mode in-game, you can edit __Screenmanager Is Fullscreen mode__ in **regedit.exe**
 
->Screen mode = 0 is windowed mode
->Screen mode = 1 is fullscreen mode
+>"Screenmanager Is Fullscreen mode" = 0 is windowed mode
+>"Screenmanager Is Fullscreen mode" = 1 is fullscreen mode
 
 <h4>License:</h4>
 
-Licensed under the [Mozilla Public License 2.0](/LICENSE).
+Licensed under the [Mozilla Public License 2.0](/LICENSE). Created by Vitaliy Levin.
