@@ -1,6 +1,7 @@
 ## Nature vs. Evil Spirits
 
 [![GitHub license](https://img.shields.io/github/license/VitalikLevin/Nature-vs.-Evil-Sprits)](https://github.com/VitalikLevin/Nature-vs.-Evil-Sprits)
+[![GitHub issues](https://img.shields.io/github/issues/VitalikLevin/Nature-vs.-Evil-Sprits)](https://github.com/VitalikLevin/Nature-vs.-Evil-Sprits)
 
 <details>
 <summary>Navigation</summary>
@@ -36,11 +37,12 @@ This is a two-dimensional tower defense.
 
 :information_source: If you wanna edit the game, you must have Unity 2017.1.1f1
 
-:information_source: If you can't change screen mode in-game, you can edit __Screenmanager Is Fullscreen mode__ in **regedit.exe**
+:information_source: If you can't change screen mode in-game, you can edit ``Screenmanager Is Fullscreen mode`` in **regedit.exe**
 
->"Screenmanager Is Fullscreen mode" = 0 is windowed mode
->
->"Screenmanager Is Fullscreen mode" = 1 is fullscreen mode
+| Value | Meaning       |
+| ----- | ------------- |
+| 0     | Windowed      |
+| 1     | Fullscreen    |
 
 <h4>License:</h4>
 
