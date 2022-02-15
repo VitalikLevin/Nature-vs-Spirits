@@ -18,11 +18,11 @@ This is a two-dimensional tower defense.
 
 <h4>Installation</h4>
 
-1.Download [Unity Engine](https://unity3d.com/get-unity/download/archive ).
+1.Download [Unity Engine](https://unity3d.com/get-unity/download/archive )
 
-2.Install Unity Engine.
+2.Install Unity Engine
 
-3.Clone this repository.
+3.Clone this repository
 
 4.Build it
 
@@ -44,6 +44,6 @@ This is a two-dimensional tower defense.
 | 0     | Windowed      |
 | 1     | Fullscreen    |
 
-<h4>License:</h4>
+<h4>License</h4>
 
 Licensed under the [Mozilla Public License 2.0](/LICENSE). Created by Vitaliy Levin.
