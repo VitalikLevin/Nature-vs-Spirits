@@ -8,8 +8,8 @@
 
 - [About the game](#about-the-game)
 - [Installation](#installation)
+- [Versioning](#versioning)
 - [Troubleshooting](#troubleshooting)
-- [License](#license)
 </details>
 
 <h4>About the game</h4>
@@ -33,6 +33,10 @@ This is a two-dimensional tower defense.
 | RAM                 | 2 GB (2048 MB)      |
 | Input devices       | Keyboard and mouse  |
 
+<h4>Versioning</h4>
+
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/VitalikLevin/Nature-vs.-Evil-Sprits/tags). 
+
 <h4>Troubleshooting</h4>
 
 :information_source: If you wanna edit the game, you must have Unity 2017.1.1f1
@@ -43,7 +47,3 @@ This is a two-dimensional tower defense.
 | ----- | ------------- |
 | 0     | Windowed      |
 | 1     | Fullscreen    |
-
-<h4>License</h4>
-
-Licensed under the [Mozilla Public License 2.0](/LICENSE). Created by Vitaliy Levin.
