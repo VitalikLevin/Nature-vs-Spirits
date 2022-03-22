@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class EffectsSpawn : MonoBehaviour
 {
+	///<summary>
+	///Must have component "Particle System"
+	///</summary>
     [SerializeField]
-	private bool effectsOn;
-	[SerializeField]
 	private GameObject effects;
+	[SerializeField]
+	private bool effectsOn;
     void Start ()
     {
         CreateEffects ();

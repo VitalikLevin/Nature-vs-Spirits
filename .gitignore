@@ -33,4 +33,5 @@ sysinfo.txt
 
 # VS Code Cache
 
-.vscode/keybindings.json
+.vscode/
+.vs/

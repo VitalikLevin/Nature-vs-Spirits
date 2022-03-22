@@ -185,8 +185,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 614769798}
-        m_MethodName: GoMain
-        m_Mode: 1
+        m_MethodName: PlayGame
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -413,16 +413,27 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 614769798}
+      - m_Target: {fileID: 614769799}
         m_MethodName: pActive
-        m_Mode: 1
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 614769799}
+        m_MethodName: WakeUp
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
@@ -514,6 +525,7 @@ GameObject:
   m_Component:
   - component: {fileID: 614769797}
   - component: {fileID: 614769796}
+  - component: {fileID: 614769799}
   - component: {fileID: 614769798}
   m_Layer: 0
   m_Name: GameManager
@@ -533,7 +545,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11f8b83b643a2224497750dd6d582117, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bonus: 0
   currencyText: {fileID: 1382907607}
 --- !u!4 &614769797
 Transform:
@@ -549,6 +560,17 @@ Transform:
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &614769798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 614769795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c78d65f58100c354a860872948560d99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &614769799
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -1237,9 +1259,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 614769798}
+      - m_Target: {fileID: 614769799}
         m_MethodName: pActive
-        m_Mode: 1
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1248,14 +1270,14 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 614769798}
+      - m_Target: {fileID: 614769799}
         m_MethodName: WakeUp
-        m_Mode: 1
+        m_Mode: 4
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 0
+          m_FloatArgument: 1
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
@@ -1457,8 +1479,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7f2d3dadde670a4b947660310bc32e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  effectsOn: 0
   effects: {fileID: 1267655871669166, guid: 0cc5d568486347340b98455392b2010b, type: 2}
+  effectsOn: 0
 --- !u!224 &1812587283 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 224364342890286314, guid: eb38d809de8ebdd46b41d852d997915a,

@@ -8,8 +8,6 @@ public class GameManager : Singleton<GameManager>
 	public PlantBtn ClickedBtn { get; set; }
 	private int currency;
 	[SerializeField]
-	private int bonus;
-	[SerializeField]
 	private Text currencyText;
 	public int Currency
 	{
@@ -52,6 +50,6 @@ public class GameManager : Singleton<GameManager>
 	}
 	void Start ()
 	{
-		Currency = 50 + bonus;
+		Currency = 50;
 	}
 }

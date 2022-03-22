@@ -1,36 +1,37 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Pause : MonoBehaviour
 {
-	private bool isPaused;
+	/// <summary>
+	/// A Unity panel
+	/// </summary>
 	[SerializeField]
 	private GameObject pObj;
-	public void pActive () 
+	/// <summary>
+	/// Activates or deactivates "pObj"
+	/// </summary>
+	/// <param name="paused">Two values: True, False</param>
+	public void pActive (bool paused) 
 	{
-		isPaused = !isPaused;
-		pObj.SetActive(isPaused);
-		Time.timeScale = 0.0f;
-	}
-	public void WakeUp ()
+		pObj.SetActive(paused);
+	}	
+	/// <summary>
+	/// Changes the speed of the game
+	/// </summary>
+	/// <param name="gameSpeed">Values: 0 < gameSpeed < 1</param>
+	public void WakeUp (float gameSpeed)
 	{
-		Time.timeScale = 1.0f;
+		Time.timeScale = gameSpeed;
 	}
-	public void GoMain ()
-	{
-		SceneManager.LoadScene (0);
-	}
-	void Update () 
-	{
-		if (Input.GetKeyUp(KeyCode.Escape))
-		{
-			pActive ();
-			if (isPaused == true)
-			{
-				WakeUp ();
-			}
-		}
-	}
+	/// <summary>
+	/// The initialization
+	/// </summary>
+	void Start ()
+    {
+		pActive (false);
+          WakeUp (1.0f);
+    }
 }

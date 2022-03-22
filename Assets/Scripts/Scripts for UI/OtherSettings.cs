@@ -6,18 +6,24 @@ using UnityEngine.Audio;
 
 public class OtherSettings : MonoBehaviour 
 {
-	//Fool's day https://clck.ru/9TFat
-	public void SocialNetworks ()
+	/// <summary>
+	/// This function must have a link
+	/// </summary>
+	/// <param name="link">A reference to something in Internet</param>
+	public void OpenSomething (string link)
 	{
-		Application.OpenURL ("https://vk.com/s_topgames");
+		Application.OpenURL (link);
 	}
-	public void BestPage ()
-	{
-		Application.OpenURL ("https://clck.ru/9TFat");
-	}
-	//Sounds
-	public Toggle sounds;
-	public void Sounds ()
+
+	/// <summary>
+    /// A Unity Gameobject with Toggle component
+    /// </summary>
+    public Toggle sounds;
+
+	/// <summary>
+    /// Edits the volume of music
+    /// </summary>
+    public void Sounds ()
 	{
 		if (sounds.isOn == true) 
 		{
@@ -30,7 +36,11 @@ public class OtherSettings : MonoBehaviour
 			AudioListener.volume = 0.0f;
 		}
 	}
-	void Start ()
+
+	/// <summary>
+    /// The initialization
+    /// </summary>
+    void Start ()
 	{
 		if (PlayerPrefs.HasKey ("Sounds")) 
 		{

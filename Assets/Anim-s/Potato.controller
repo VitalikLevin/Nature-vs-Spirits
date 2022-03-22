@@ -51,7 +51,7 @@ AnimatorState:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: potato_calm
-  m_Speed: 0.1
+  m_Speed: 0.2
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours: []
@@ -77,16 +77,16 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 1102696269296145692}
-    m_Position: {x: 240, y: 120, z: 0}
+    m_Position: {x: 240, y: 156, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102253698248788456}
-    m_Position: {x: 240, y: 204, z: 0}
+    m_Position: {x: 240, y: 228, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
   m_StateMachineTransitions: {}
   m_StateMachineBehaviours: []
-  m_AnyStatePosition: {x: 24, y: 192, z: 0}
+  m_AnyStatePosition: {x: 24, y: 204, z: 0}
   m_EntryPosition: {x: 24, y: 240, z: 0}
   m_ExitPosition: {x: 800, y: 120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
