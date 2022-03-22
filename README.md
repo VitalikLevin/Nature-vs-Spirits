@@ -39,7 +39,9 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 <h4>Troubleshooting</h4>
 
-:information_source: If you wanna edit the game, you must have Unity 2017.1.1f1
+:information_source: If you wanna edit the game, you must have **Unity 2017.1.1f1**
+
+:information_source: If you can't run the game, you can install **.NET Framework 3.5**
 
 :information_source: If you can't change screen mode in-game, you can edit ``Screenmanager Is Fullscreen mode`` in **regedit.exe**
 
