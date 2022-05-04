@@ -9,6 +9,7 @@
 - [Installation](#installation)
 - [Versioning](#versioning)
 - [Troubleshooting](#troubleshooting)
+- [License](#license)
 
 #### About the game
 
@@ -47,3 +48,9 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 | ----- | ------------- |
 | 0     | Windowed      |
 | 1     | Fullscreen    |
+
+#### License
+
+Code is licensed under [MIT License](/LICENSE.txt).
+
+Code that was written before the 27th of April, 2022 is licensed under [Mozilla Public License 2.0](/LICENSE_mpl.txt).
