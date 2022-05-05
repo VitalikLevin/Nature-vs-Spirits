@@ -1,14 +1,11 @@
-## Nature vs. Evil Spirits
-
-[![GitHub license](https://img.shields.io/github/license/VitalikLevin/Nature-vs.-Evil-Sprits)](https://github.com/VitalikLevin/Nature-vs.-Evil-Sprits/LICENSE.txt)
-[![GitHub issues](https://img.shields.io/github/issues/VitalikLevin/Nature-vs.-Evil-Sprits)](https://github.com/VitalikLevin/Nature-vs.-Evil-Sprits)
+# Nature vs. Evil Spirits
 
 #### Navigation
 
 - [About the game](#about-the-game)
 - [Installation](#installation)
-- [Versioning](#versioning)
 - [Troubleshooting](#troubleshooting)
+- [Versioning](#versioning)
 - [License](#license)
 
 #### About the game
@@ -32,10 +29,6 @@ This is a two-dimensional tower defense.
 | RAM                 | 2 GB (2048 MB)      |
 | Input devices       | Keyboard and mouse  |
 
-#### Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/VitalikLevin/Nature-vs.-Evil-Sprits/tags). 
-
 #### Troubleshooting
 
 :information_source: If you wanna edit the game, you must have **Unity 2017.1.1f1**
@@ -49,8 +42,17 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 | 0     | Windowed      |
 | 1     | Fullscreen    |
 
+#### Versioning
+
+We use [SemVer](http://semver.org/) for versioning.
+For the versions available, see the [tags on this repository](https://github.com/VitalikLevin/Nature-vs-Spirits/tags). 
+
 #### License
 
-Code is licensed under [MIT License](/LICENSE.txt).
+¹ Code is licensed under [MIT License](/LICENSE_mit.txt).
 
-Code that was written before the 27th of April, 2022 is licensed under [Mozilla Public License 2.0](/LICENSE_mpl.txt).
+![MIT License](https://img.shields.io/badge/License-MIT-darklight.svg)
+
+² Code that was written before the 27th of April, 2022 is licensed under [Mozilla Public License 2.0](/LICENSE_mpl.txt).
+
+![MPL-2.0](https://img.shields.io/badge/License-MPL2.0-lightgrey.svg)
