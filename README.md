@@ -7,6 +7,7 @@
 - [Troubleshooting](#troubleshooting)
 - [Versioning](#versioning)
 - [License](#license)
+- [Notes](#notes)
 
 ### About the game
 
@@ -14,21 +15,21 @@ This is a two-dimensional tower defense.
 
 ### Installation
 
-1.Download [Unity Engine](https://unity3d.com/get-unity/download/archive)
+1. Download [Unity Engine](https://unity3d.com/get-unity/download/archive)
 
-2.Install Unity Engine
+2. Install Unity Engine
 
-3.Clone this repository
+3. Clone this repository
 
-4.Build it
+4. Build it
 
-| System requirements     |                     |
-| ----------------------- | ------------------- |
-| Operating system        | Windows 7 (64-bit)  |
-| CPU                     | Intel Celeron T3000 |
-| RAM                     | 2 GB (2048 MB)      |
-| Input devices           | Keyboard and mouse  |
-| .NET (dotNET) Framework | 3.5                 |
+| System requirements   |                     |
+| --------------------- | ------------------- |
+| Operating system      | Windows 7 (64-bit)  |
+| CPU                   | Intel Celeron T3000 |
+| RAM                   | 2 GB (2048 MB)      |
+| Input devices         | Keyboard and mouse  |
+| .NET Framework[^1]    | 3.5                 |
 
 ### Troubleshooting
 
@@ -51,3 +52,7 @@ For the versions available, see the [tags on this repository](https://github.com
 All code in this project is licensed under [MIT License](/LICENSE.txt).
 
 ![MIT License](https://img.shields.io/badge/License-MIT-darklight.svg)
+
+### Notes
+
+[^1]: Sometimes it is called "dotNET Framework".
