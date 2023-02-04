@@ -1,15 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 public class EffectsSpawn : MonoBehaviour
 {
-	///<summary>
-	///Must have component "Particle System"
-	///</summary>
     [SerializeField]
 	private GameObject effects;
-	[SerializeField]
+    [SerializeField]
 	private bool effectsOn;
     void Start ()
     {

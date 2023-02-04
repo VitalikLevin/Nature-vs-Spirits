@@ -1,23 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
-
 public class ResolutionSettings : MonoBehaviour 
 {
-
-	/// <summary>
-    /// This dropdown can change the resolution
-    /// </summary>
     public Dropdown resDropdown;
-	/// <summary>
-    /// This list has all user resolutions
-    /// </summary>
     Resolution[] res;
-	/// <summary>
-    /// Changes screen mode
-    /// </summary>
     public void ScreenMode ()
 	{
 		if (Input.GetKey(KeyCode.F))
@@ -25,9 +12,6 @@ public class ResolutionSettings : MonoBehaviour
 			Screen.fullScreen = !Screen.fullScreen;
 		}
 	}
-	/// <summary>
-	/// Changes the resolution and screen mode
-	/// </summary>
 	public void SetRes ()
 	{
 		Screen.SetResolution (res [resDropdown.value].width, res [resDropdown.value].height, Screen.fullScreen);
@@ -40,7 +24,6 @@ public class ResolutionSettings : MonoBehaviour
 		string[] strRes = new string[res.Length];
 		for (int i = 0; i < res.Length; i++) 
 		{
-			// strRes [i] = res [i].ToString();
 			strRes [i] = res [i].width.ToString () + "x" + res [i].height.ToString ();
 		}
 		resDropdown.ClearOptions ();
@@ -56,7 +39,7 @@ public class ResolutionSettings : MonoBehaviour
 			Screen.SetResolution (res [res.Length - 1].width, res [res.Length - 1].height, Screen.fullScreen);
 		}
 	}
-	void Update ()
+    void Update ()
 	{
 		ScreenMode ();
 	}

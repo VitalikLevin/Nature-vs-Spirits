@@ -10,7 +10,7 @@ TagManager:
   layers:
   - Default
   - TransparentFX
-  - Ignore Raycast
+  - 
   - 
   - Water
   - UI

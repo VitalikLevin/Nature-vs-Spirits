@@ -52,6 +52,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fd0d31d0d8078342ab508ffda395434, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fullColor:
+    serializedVersion: 2
+    rgba: 4285953791
+  emptyColor:
+    serializedVersion: 2
+    rgba: 4284153696
 --- !u!212 &212039751702910868
 SpriteRenderer:
   m_ObjectHideFlags: 1

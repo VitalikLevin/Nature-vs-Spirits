@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
+﻿using UnityEngine;
 public class Hover : Singleton<Hover> 
 {
 	private SpriteRenderer spriteRenderer;
@@ -12,7 +9,7 @@ public class Hover : Singleton<Hover>
 			transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 			transform.position = new Vector3 (transform.position.x, transform.position.y, 0);
 		}
-	}	
+	}
 	public void Activate (Sprite sprite)
 	{
 		spriteRenderer.enabled = true;
@@ -23,7 +20,6 @@ public class Hover : Singleton<Hover>
 		this.spriteRenderer.sprite = null;
 		GameManager.Instance.ClickedBtn = null;
 	}
-	// Update is called once per frame
 	void Update () 
 	{
 		FollowMouse();

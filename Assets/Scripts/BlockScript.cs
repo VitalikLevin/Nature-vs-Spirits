@@ -1,17 +1,17 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.EventSystems;
-
 public class BlockScript : MonoBehaviour 
 {
 	private Transform block;
-	private SpriteRenderer blockRenderer;
-	private Color32 fullColor = new Color32 (255, 118, 118, 255);
-	private Color32 emptyColor = new Color32 (96, 255, 90, 255);
+	[SerializeField]
+	private Color32 fullColor;
+	[SerializeField]
+	private Color32 emptyColor;
 	public bool IsEmpty { get; private set; }
 	public Point GridPosition { get; private set; }
-	private void PlacePlant () 
+    public SpriteRenderer BlockRenderer { get; set; }
+    public bool DebugFoo { get; set; }
+    private void PlacePlant () 
 	{
 		GameObject newPlant = Instantiate(GameManager.Instance.ClickedBtn.PlantPrefab);
 		newPlant.transform.position = new Vector3 (block.position.x, block.position.y, 0);
@@ -22,13 +22,13 @@ public class BlockScript : MonoBehaviour
 	}
 	private void ColorBlock (Color32 newColor)
 	{
-		blockRenderer.color = newColor;
+		BlockRenderer.color = newColor;
 	}
 	void OnMouseOver ()
 	{
 		if (!EventSystem.current.IsPointerOverGameObject() && GameManager.Instance.ClickedBtn != null)
 		{
-			if (IsEmpty == true)
+			if (IsEmpty == true && !DebugFoo)
 			{
 				ColorBlock(emptyColor);
 				if (Input.GetMouseButtonDown(0))
@@ -36,7 +36,7 @@ public class BlockScript : MonoBehaviour
 					PlacePlant();
 				}
 			}
-			if (IsEmpty == false)
+			if (IsEmpty == false && !DebugFoo)
 			{
 				ColorBlock(fullColor);
 			}
@@ -44,12 +44,15 @@ public class BlockScript : MonoBehaviour
 	}
 	private void OnMouseExit ()
 	{
-		ColorBlock(Color.white);
+        if (!DebugFoo)
+        {
+			ColorBlock(new Color32(244, 244, 244, 255));
+        }
 	}
 	void Start ()
 	{
 		block = GetComponent<Transform>();
-		blockRenderer = GetComponent<SpriteRenderer>();
+		BlockRenderer = GetComponent<SpriteRenderer>();
 		IsEmpty = true;
 	}
 	public void Setup (Point gridPos, Vector3 wPos)
