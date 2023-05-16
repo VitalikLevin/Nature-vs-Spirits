@@ -1,5 +1,4 @@
 # Nature vs. Evil Spirits
-
 ### Navigation
 - [About the game](#about-the-game)
 - [Installation](#installation)
